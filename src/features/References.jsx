@@ -117,7 +117,7 @@ function References({ references, setReferences }) {
     <>
       <form className="form" onSubmit={handleSubmit}>
         <label htmlFor="name">
-          Nom de chef *
+          Nom*
           <input
             type="text"
             onChange={handleChange}
@@ -175,7 +175,7 @@ function References({ references, setReferences }) {
         </label>
 
         <label htmlFor="position">
-          Poste de chef *
+          Poste de *
           <input
             type="text"
             onChange={handleChange}
