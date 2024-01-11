@@ -242,8 +242,8 @@
 @media screen and (width < 900px) {
   .preview-container {
     font-size: 7px;
-    width: calc(21cm * 0.5);
-    height: calc(29.7cm * 0.5);
+    width: calc(21cm * 0.45);
+    height: calc(29.7cm * 0.45);
   }
   .app {
     padding: 0.2rem;
