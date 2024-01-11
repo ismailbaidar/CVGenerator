@@ -152,7 +152,7 @@ export default function Preview({
             <div className="skills">
               <h4 className={`Sep-titel ${color}`}>Compétances</h4>
 
-              <div>
+              <div className="d-flex">
                 {skills.map((skill) => {
                   return (
                     <div>
