@@ -1,0 +1,253 @@
+:root{
+  --size:0.9;
+}
+@page {
+  size: "a4";
+}
+@media print {
+  .preview-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+.Sep-titel{
+  background-color: aqua;
+  /* width: 10rem; */
+  text-align: center;
+  padding: 8px;
+  /* margin-left: 5.5rem; */
+  margin-bottom: 5px;
+}
+/*input {
+  /* border: 1px solid gray; */
+  /* outline: none; */
+
+
+.preview-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  font-size: 0.6rem;
+  overflow: hidden;
+  width: calc(21cm * var(--size));
+  height: calc(29.7cm * var(--size));
+  margin: auto;
+  box-shadow: 1px 1px 3px gray;
+  /* width: 21cm;
+  height: 29.7cm;
+  scale: 0.8; */
+}
+.bold {
+  font-weight: bold;
+}
+.preview-container .right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.preview-container .left-side {
+  /* color: white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 2em;
+  position: relative;
+}
+
+.preview-container .image-name {
+  display: grid;
+  gap: 0.5rem;
+}
+.preview-container .sections {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.preview-container .sections .langues {
+  display: grid;
+  gap: 0.25rem;
+}
+.p-4 {
+  padding: 0.5rem;
+}
+.preview-container .sections .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  /* padding: 2em; */
+  position: relative;
+  max-width: 150px;
+}
+.preview-container .preview-name {
+  text-align: center;
+}
+.preview-left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.preview-container .left-side .image img {
+  object-fit: cover;
+}
+.preview-container .left-side .image {
+  width: 50%;
+  margin-inline: auto;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 2px solid white;
+}
+.profile p {
+  word-wrap: break-word !important;
+  display: flex;
+  flex-wrap: wrap;
+
+  overflow-wrap: break-word !important;
+  white-space: pre-wrap !important;
+}
+.preview-container .left-side .image img {
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.preview-container .titre {
+  padding: 1rem;
+  padding-top: 0;
+  font-size: 2em;
+}
+.personal-info-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  max-width: 2300px;
+}
+.personal-info-wrapper svg {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.right-side::-webkit-scrollbar {
+  width: 0px !important;
+}
+.personal-info {
+  overflow-wrap: break-word;
+  width: 100%;
+
+  word-wrap: break-word !important;
+
+  overflow-wrap: break-word !important;
+  white-space: pre-wrap !important;
+  /* background-color: red; */
+}
+
+.preview-container .preview-we {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.preview-container .preview-we .date-job-name {
+  font-size: 0.7rem;
+  /* background-color: red; */
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.job-name {
+  color: rgb(142, 142, 142);
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.preview-container .experiences-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.skills-container {
+  display: flex;
+  /* gap: 1rem; */
+  row-gap: 0.25rem;
+  column-gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.education-element {
+  display: grid;
+  gap: 0.25rem;
+}
+.education-element .name-date {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  /* background-color: red; */
+}
+
+.preview-container .section-name {
+  text-decoration: underline;
+  padding: 0.25rem;
+  padding-bottom: 0.5rem;
+}
+
+.preview-container .education-element .details {
+  margin-left: auto;
+}
+
+.educations-container {
+  display: grid;
+  gap: 0.95rem;
+}
+.preview-container::-webkit-scrollbar {
+  visibility: hidden !important;
+}
+.add-button {
+  background: #172340;
+  color: white;
+  width: 100%;
+  /* border-radius: 0.5rem; */
+  padding: 1.1rem 1.75rem;
+  border: 1px solid lightgray;
+  display: inline-block;
+  width: max-content;
+  margin-inline: auto;
+  font-size:1.15rem ;
+}
+
+@page {
+  size: "a4";
+}
+@media print {
+  .preview-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: unset !important;
+    height: unset !important;
+    font-size: unset;
+  }
+}
+@media screen and (width < 900px) {
+  .preview-container {
+    font-size: 7px;
+    width: calc(21cm * 0.5);
+    height: calc(29.7cm * 0.5);
+  }
+  .app {
+    padding: 0.2rem;
+  }
+  .add-button{
+    font-size: 1rem;
+  }
+}
+
+

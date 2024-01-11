@@ -1,0 +1,45 @@
+div {
+  max-width: 600px;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input,
+select {
+  margin-bottom: 15px;
+  padding: 8px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+h2,
+h3 {
+  margin-top: 20px;
+}
+
+p {
+  /* border: 1px solid #ddd; */
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+.btn1 {
+  background-color: blueviolet;
+}

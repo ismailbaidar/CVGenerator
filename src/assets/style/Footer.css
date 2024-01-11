@@ -1,0 +1,41 @@
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  font-size: 0.5rem;
+  justify-content: space-between;
+}
+footer .icon {
+  font-size: 0.95rem;
+}
+
+.logodv {
+  display: flex;
+  align-items: center;
+  color: #000;
+  justify-content: center;
+}
+.Linkdv {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+a:hover {
+  color: #ffd700;
+}
+.copy-right {
+  color: gray;
+  font-size: 0.9rem;
+}

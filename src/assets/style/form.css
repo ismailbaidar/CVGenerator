@@ -1,0 +1,98 @@
+:root {
+  --base-green: #e3f5da;
+  --font-green: #95be82;
+  --base-red: #ffe7e7;
+  --font-red: #ff968f;
+  --base-yellow: #fff0c8;
+  --font-yellow: #a89565;
+  --base-purple: #eae8fe;
+  --font-purple: #ad9ed7;
+}
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding-top: 3rem;
+}
+
+.form * {
+  padding: 0.75rem 0.5rem;
+  gap: 0.5rem;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  padding: 0;
+}
+.form label input,
+.form label textarea,
+.form button,
+.form select {
+  width: 100%;
+  /* border-radius: 0.5rem; */
+  padding: 1rem 1.5rem;
+  border: 1px solid lightgray;
+  display: inline-block;
+}
+input::placeholder {
+  color: lightgray;
+}
+
+.form button {
+  background: var(--primary);
+  color: white;
+}
+
+.display {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  padding-block: 1rem;
+}
+.Basic {
+  background-color: var(--base-red);
+  color: var(--font-red);
+}
+
+.maternnelle {
+  background-color: var(--base-green);
+  color: var(--font-green);
+}
+
+.Intermidiaire {
+  background-color: var(--base-yellow);
+  color: var(--font-yellow);
+}
+
+.Avancé {
+  background-color: var(--base-purple);
+  color: var(--font-purple);
+}
+
+input[type="file"] {
+  display: none !important;
+}
+
+.image-label {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: flex-start !important;
+  align-items: center;
+  padding: 0 !important;
+  width: max-content !important;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+.image-label span {
+  font-size: 0.9rem;
+}
+.svg {
+  width: max-content;
+  color: var(--primary);
+
+  /* border: 1px solid var(--primary); */
+  font-size: 1.2rem;
+}
